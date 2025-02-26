@@ -232,7 +232,8 @@ The below statement is used to find duplicate rows.
 >
 > HAVING COUNT(id) > 1;
 
-### 28. What types of relationships are used in MySQL?
+### 28. What types of relationships are used in MySQL?✅
+
 
 There are three types of [relationships](https://www.geeksforgeeks.org/recursive-relationships-in-er-diagrams) used in MySQL.
 
@@ -242,31 +243,31 @@ There are three types of [relationships](https://www.geeksforgeeks.org/recursive
 
 ****Many-to-many: ****Many rows in a table are related to many rows in different table is called many to many relationship.
 
-### 29. How to insert Date in MySQL?
+### 29. How to insert Date in MySQL?✅
 
 We can use INSERT statement to insert date in MySQL table. MySQL default date format is YYYY-MM-DD. Automatic MySQL consist many data types to store dates.
-
+TIMESTAMP 只需要使用 4 个字节的存储空间，但是 DATETIME 需要耗费 8 个字节的存储空间
 * DATE
-* DATETIME
-* TIMESTAMP
+* DATETIME 8 bytes Time Zone
+* TIMESTAMP　4 bytes Time Zone
 * YEAR
 
 ****Syntax:****
 
 > ****INSERT**** ****INTO**** table\_name (column\_name, column\_date) ****VALUES**** (‘DATE: Manual Date’, ‘2023-5-20’);   
 
-### 30. What is join? Tell different join in MySQL.
+### 30. What is join? Tell different join in MySQL.✅
 
 [Joins](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins) are used to connect two or more tables. It returns only same values in all tables.
 
 There are four different ways to join MySQL tables.
 
-* Inner Join
-* left Join
-* Right Join
-* Full Join
+* Inner Join 只有当两个表都存在满足条件的记录时才会返回行。
+* left Join 返回左表中的所有行，即使右表中没有满足条件的行也是如此。
+* Right Join 返回右表中的所有行，即使左表中没有满足条件的行也是如此。
+* Full Join 只要其中有一个表存在满足条件的记录，就返回行。
 
-### 31. What is a primary key? How to drop the primary key in MySQL?
+### 31. What is a primary key? How to drop the primary key in MySQL?✅
 
 A primary key in MySQL is a single field or a group of fields that are used to uniquely identify each record in a table. A primary key cannot be null or empty. [ALTER TABLE](https://www.geeksforgeeks.org/sql-alter-add-drop-modify) statement is used to delete a primary key from a table.
 
@@ -274,7 +275,7 @@ A primary key in MySQL is a single field or a group of fields that are used to u
 
 > ****ALTER**** ****TABLE**** table\_name  ****DROP**** ****PRIMARY**** ****KEY****;    
 
-### 32. What is a heap table in MySQL?
+### 32. What is a heap table in MySQL?✅
 
 A [heap](https://www.geeksforgeeks.org/heap-data-structure) table is usually used for temporary and fast temporary storage.
 
@@ -283,34 +284,34 @@ A [heap](https://www.geeksforgeeks.org/heap-data-structure) table is usually use
 * Heap table didn’t support the AUTO\_INCREMENT command.
 * Indexes should be NOT NULL in the heap table.
 
-### 33. What is the main difference between the primary key and the candidate key?
-
+### 33. What is the main difference between the primary key and the candidate key?✅
+最大区别:主键只能一个, 候选键多个
 The primary key uniquely identified each row of a table. only one primary key is available for a table.
 
 * A primary is also a [candidate key](https://www.geeksforgeeks.org/difference-between-primary-and-candidate-key).
 * Candidate key that can be used for all [foreign key](https://www.geeksforgeeks.org/postgresql-foreign-key) references.
 
-For mor detail you can see: [Difference between Primary and Candidate Key](https://www.geeksforgeeks.org/difference-between-primary-and-candidate-key)
+A Candidate Key is a set of attributes in a relational database that can uniquely identify a record (row) in a table. A table may have multiple candidate keys, but only one can be chosen as the Primary Key.
 
-### 34. ****What is the difference between DELETE and TRUNCATE commands in MySQL?****
+### 34. ****What is the difference between DELETE and TRUNCATE commands in MySQL?****✅
 
-[****DELETE****](https://www.geeksforgeeks.org/sql-delete-statement)**** ****Command is used to delete rows from the table depending on given the condition. [TRUNCATE](https://www.geeksforgeeks.org/sql-drop-truncate) command is used to DELETE all rows from the table. DELETE command is a Data Manipulation Language command. TRUNCATE command is a Data Definition Language command.
+[****DELETE****](https://www.geeksforgeeks.org/sql-delete-statement)**** ****Command is used to delete rows from the table depending on given the condition. [TRUNCATE](https://www.geeksforgeeks.org/sql-drop-truncate) command is used to DELETE all rows from the table. DELETE command is a Data Manipulation Language DML command. TRUNCATE command is a Data Definition Language DDL command.
 
 For More detail you can see : [Difference between DELETE and TRUNCATE](https://www.geeksforgeeks.org/difference-between-delete-and-truncate)
 
-### 35. What is InnoDB?
+### 35. What is InnoDB?✅
 
-A SQL storage database is called InnoDB database. The InnoDB offers [ACID transactions](https://www.geeksforgeeks.org/acid-properties-in-dbms), row-level locking, and foreign key support. InnoDB is owned by Oracle Corporation.
+A SQL storage database is called InnoDB database. The InnoDB offers [ACID **transactions**](https://www.geeksforgeeks.org/acid-properties-in-dbms), **row-level locking**, and **foreign key** support. InnoDB is owned by Oracle Corporation.
 
-### 36. ****What is the difference between UNION and UNION ALL in MySQL?****
-
+### 36. ****What is the difference between UNION and UNION ALL in MySQL?****✅
+union去重, union all不去重
 During combining the results of more than one SELECT statement, the [UNION](https://www.geeksforgeeks.org/union-and-union-all-in-ms-sql-server) operator deletes duplicate rows between the various SELECT statements. The [UNION ALL](https://www.geeksforgeeks.org/union-union_all-functions-in-dplyr-package-in-r) also combines the result set of more than one SELECT statement, but it does not delete duplicate rows.
 
-### ****37. What is a ‘timestamp’ in MySQL?****
+### ****37. What is a ‘timestamp’ in MySQL?****✅
 
 In MySQL, When a row is added to or updated in a table, a data type “[timestamp](https://www.geeksforgeeks.org/get-current-timestamp-using-python)” automatically records the time.
 
-### 38. What is the use of ENUMs in MySQL?
+### 38. What is the use of ENUMs in MySQL?✅
 
 ENUM is a string [object](https://www.geeksforgeeks.org/objects-in-javascript) that can be used when creating tables to specify a set of predefined values.
 
@@ -318,7 +319,7 @@ ENUM is a string [object](https://www.geeksforgeeks.org/objects-in-javascript) t
 
 For more detail refer to those article on [Enumerator (Enum) in MySQL](https://www.geeksforgeeks.org/enumerator-enum-in-mysql)
 
-### 39. How can you control max size of heap in MySQL?
+### 39. How can you control max size of heap in MySQL?✅
 
 MySQL config variable **max\_heap\_table\_size** can be used to control the max size of [heap](https://www.geeksforgeeks.org/heap-sort).
 
@@ -326,9 +327,10 @@ MySQL config variable **max\_heap\_table\_size** can be used to control the max 
 
 > SET max\_heap\_table\_size = M
 
-### 40. What is a view? How to create a view?
+### 40. What is a view? How to create a view?✅
 
 A database object that has no value is called view. Rows and columns exist in a view. A view is virtual table. it is created by combining one or more tables. The difference of a view and a table is that views are definition that build on other tables. If the underlying table changes, the View will also reflect those same changes.
+简化SQL操作, 只使用一部分数据,本身不包含数据,不能对其进行索引操作.
 
 The below syntax is used to create a view.
 
@@ -352,12 +354,12 @@ There are three storage formats can be used .
 * The .MYD( MYData) extension can be used for data files.
 * The .MYI(MYIndex) extension can be used to Index files.
 
-### 42. How can we save images in MySQL?
+### 42. How can we save images in MySQL?✅
 
-In MySQL, Blobs can be used to store images. All [database images](https://www.geeksforgeeks.org/how-to-upload-image-into-database-and-display-it-using-php) are first converted into blobs then saved and then they will be added to the database, and finally, it will later be stored on the disk.
+In MySQL, **Blobs** can be used to store images. All [database images](https://www.geeksforgeeks.org/how-to-upload-image-into-database-and-display-it-using-php) are first converted into blobs then saved and then they will be added to the database, and finally, it will later be stored on the disk.
 
-### 43. What are trigger and how many TRIGGERS are available in MySQL table?
-
+### 43. What are trigger and how many TRIGGERS are available in MySQL table?✅
+A Trigger is a special object in a database that automatically executes predefined SQL statements when certain events (INSERT, UPDATE, or DELETE) occur. Triggers are commonly used
 A [trigger](https://www.geeksforgeeks.org/sql-trigger-student-database) is a procedural code in a database. Triggers are automatically triggered when specific events occur on a particular table. During column updating triggers are invoked automatically.
 
 SIX triggers are available in MySQL table.
@@ -382,7 +384,7 @@ For more detail you can see: [Different types of MySQL Triggers (with examples) 
 
 A list of permissions known as an [Access Control List](https://www.geeksforgeeks.org/access-lists-acl) is connected to an object. It is MySQL server security model helps in troubleshooting issues like users being unable to connect. MySQL holds the ACL’s cached in memory. ACL’s also called grant tables. MySQL verifies the authentication data and permissions against the ACLs. It predetermined order whenever a user tries to log in or execute a command.
 
-### ****46. What is Normalization and list the different types of normalization?****
+### ****46. What is Normalization and list the different types of normalization?****✅
 
 [****Normalization****](https://www.geeksforgeeks.org/introduction-of-database-normalization) is used to avoid duplication and redundancy. it is a process of organizing data. There are many normal forms of normalization. which are also called successive levels. The first three regular forms are sufficient.
 
@@ -390,7 +392,7 @@ A list of permissions known as an [Access Control List](https://www.geeksforgeek
 * ****Second Normal form(2NF):**** Value of every supporting column depending on the whole primary key.
 * ****Third Normal Form(3NF): ****It depends only on the **primary key** and no other value of non-key column.
 
-### 47. W****hat are various ways to create an index?****
+### 47. W****hat are various ways to create an index?****✅
 
 There are many options to create an index as below:
 
@@ -398,13 +400,16 @@ There are many options to create an index as below:
 * The SQL Server Management Studio is available for use. we can use this to browse to the table where the index will be created, and then right-click on the Indexes node. We must select the New Index option over here.
 * We can identify the index indirectly by specifying the [PRIMARY KEY](https://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key) and the [UNIQUE](https://www.geeksforgeeks.org/postgresql-unique-index) constraint in the [CREATE TABLE](https://www.geeksforgeeks.org/python-sqlite-create-table) or [ALTER TABLE](https://www.geeksforgeeks.org/sql-alter-add-drop-modify) statement.
 
-### 48. What are a clustered index and a non clustered index(secondary index)?
+### 48. What are a clustered index and a non clustered index(secondary index)?✅
 
 ****Cluster Index:**** An index type used to arrange data in a table is called a [clustered index](https://www.geeksforgeeks.org/clustering-indexing-in-databases). The table’s data are stored in a specific order based on the clustered index.
 
 ****Non Cluster Index:**** A [non-clustered index](https://www.geeksforgeeks.org/sql-queries-on-clustered-and-non-clustered-indexes) is also a type of index used to organize data in a table. The table’s data are not stored in a specific order based on the non clustered index.
 
 For more details, Check our latest article on [Difference between Clustered and Non-clustered index](https://www.geeksforgeeks.org/difference-between-clustered-and-non-clustered-index).
+在 MySQL 的 InnoDB 存储引擎 中，默认情况下表是基于 B+ 树的索引组织表（Index-Organized Table, IOT），也就是说：
+主键（Primary Key）索引采用 聚簇索引（Clustered Index）。
+非主键索引（普通索引、唯一索引）采用 二级索引（Secondary Index）。
 聚簇索引（Clustered Index）	叶子节点存储完整的数据行
 二级索引（Secondary Index）	叶子节点存储主键 ID，而不是完整数据
 使用聚簇索引（主键索引）查询时，不需要回表，因为叶子节点就包含了完整的数据行。
@@ -512,11 +517,19 @@ where b=2 and c=3；
 parameter concatenation
 传参数方式解决SQL注入
 
-### 63. MyISAM 与 InnoDB 区别：
-InnoDB支持事务 
-InnoDB支持外键
-InnoDB支持row-level lock
-InnoDB支持崩溃后恢复, 基于redo log
-InnoDB支持MVCC
+### 63. What is PARTITION BY in SQL?
+PARTITION BY is a clause used in **window functions** to divide the result set into partitions (groups) based on a specified column. Each partition is processed separately when applying window functions like RANK(), ROW_NUMBER(), SUM(), AVG(), etc.
+PARTITION BY does not change the number of rows in the result set.
+It only defines groups within the data for window function calculations.
+It is different from GROUP BY, which reduces the number of rows in the result set.
 
-### 64. partition by?
+### 64.SQL 语句的实际执行顺序?
+1	FROM	确定查询的数据来源（表、子查询、JOIN）
+2	JOIN	处理表连接（如 INNER JOIN, LEFT JOIN）
+3	WHERE	过滤数据（对 未分组 数据筛选）
+4	GROUP BY	按指定列进行分组
+5	HAVING	过滤 分组后的数据
+6	SELECT	选择要返回的字段，并计算派生列
+7	DISTINCT	去重
+8	ORDER BY	结果集排序
+9	LIMIT	限制返回行数

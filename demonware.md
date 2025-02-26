@@ -166,6 +166,25 @@ df [选项] [文件系统]：用于查看系统的磁盘空间使用情况，包
 sar [选项] [时间间隔] [重复次数]：用于收集、报告和分析系统的性能统计信息，
 ### 3.OSI models?
 ![alt text](osi七层模型2.png)
+2xx（成功响应）
+200 OK：请求成功，返回数据（常见于 GET、POST 请求）。
+201 Created：请求成功，已创建资源（常见于 POST 请求）。
+204 No Content：请求成功，但无返回内容（常见于 DELETE 请求）。
+3xx（重定向响应）
+301 Moved Permanently：资源已永久移动，新地址需使用 Location 头部字段提供。
+302 Found：资源临时移动，客户端仍应使用原地址请求（但服务器可能提供新地址）。
+304 Not Modified：资源未修改，客户端可使用缓存版本（用于 If-Modified-Since 或 ETag 机制）。
+4xx（客户端错误）
+400 Bad Request：请求格式错误，服务器无法解析。
+401 Unauthorized：未授权，需提供身份验证信息（如 Token 失效）。
+403 Forbidden：禁止访问，权限不足。
+404 Not Found：请求的资源不存在。
+405 Method Not Allowed：请求方法不被允许（如对 GET 资源使用 POST）。
+5xx（服务器错误）
+500 Internal Server Error：服务器内部错误，无法完成请求。
+502 Bad Gateway：网关或代理服务器收到无效响应。
+503 Service Unavailable：服务器暂时无法处理请求（通常因过载或维护）。
+504 Gateway Timeout：网关或代理服务器未及时收到上游服务器响应。
 ## Docker
 
 ## Kubernetes
@@ -173,5 +192,9 @@ sar [选项] [时间间隔] [重复次数]：用于收集、报告和分析系�
 
 ## 结尾
 ### 反问
+如何避免主从延迟?
+(强制将读请求路由到主库处理,延迟读取)
+数据库分库分表后，如何进行 SQL 查询？
+(应用层聚合, 使用分布式数据库框架ShardingSphere)
 What kind of **impact** could I make or contribute to if I join the team? 
 What's the **next step** in the interview process?
