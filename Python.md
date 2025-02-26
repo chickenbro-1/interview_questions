@@ -50,7 +50,7 @@ Most of us may be surprised to know that python is actually both a compiled and 
 
 ### ****7. How are arguments passed by value or by reference in Python?****
 
-In Python, arguments are passed by object reference (also called “pass by assignment”). This means that functions receive references to the same objects:
+In Python, arguments are passed by **object reference** (also called “pass by assignment”). This means that functions receive references to the same objects:
 
 * Mutable objects (like lists or dictionaries) can be modified within the function.
 * Immutable objects (like integers or strings) cannot be changed and reassigning them inside the function doesn’t affect the original object.
@@ -241,6 +241,7 @@ sorted有返回值是新的list
 ### ****30. What are Decorators?****
 
 [Decorators](https://www.geeksforgeeks.org/decorators-in-python/) are a very powerful and useful tool in Python as they are the specific change that we make in Python syntax to alter functions easily.
+装饰器（Decorator） 是 Python 中的一种高级函数，它用于在不修改原函数的情况下，动态地添加或修改函数的功能。本质上，装饰器就是一个接受函数并返回新函数的高阶函数。
 
 ### ****31. How do you debug a Python program?****
 

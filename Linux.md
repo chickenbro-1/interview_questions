@@ -117,3 +117,7 @@ ls -l /proc/<PID>/exe
 ### 19.top命令中 system load 和 system utilization?
 System Load（系统负载）: 主要关注的是 CPU 任务的等待情况(waiting status of CPU tasks.)
 System Utilization（系统利用率）主要关注的是 CPU、内存、磁盘等资源的占用情况。(the usage of CPU, memory, disk, and other system resources.)
+
+### 20.Linux命令重定向 > 和 >>
+\> 表示输出，会覆盖文件原有的内容
+\>\> 表示追加，会将内容追加到已有文件的末尾

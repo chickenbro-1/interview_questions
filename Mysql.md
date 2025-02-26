@@ -14,11 +14,11 @@ Table of Content
 
 ## MySQL Interview Questions And Answers for Freshers
 
-### 1. What is MySQL and How does it differ from other relational databases?
+### 1. What is MySQL and How does it differ from other relational databases?✅
 
 MySQL is an ****open-source**** relational database management system (****RDBMS****) that is widely used for ****managing structured data****. It utilizes SQL (Structured Query Language) for ****querying**** and ****managing data****. MySQL is known for its reliability, scalability, and performance, making it a popular choice for various applications
 
-### 2. How to create a database in MySQL?
+### 2. How to create a database in MySQL?✅
 
 To create a database in MySQL, we can use the ****CREATE DATABASE**** statement followed by the name we want to give to our database. For example:
 
@@ -26,12 +26,12 @@ To create a database in MySQL, we can use the ****CREATE DATABASE**** statement 
 CREATE DATABASE mydatabase;
 ```
 
-### 3. Difference between CHAR and VARCHAR data types.
+### 3. Difference between CHAR and VARCHAR data types.✅
 
 * ****CHAR: ****Fixed-length character data type where the storage size is predefined. Trailing spaces are padded to reach the defined length.
 * ****VARCHAR:**** Variable-length character data type where the storage size depends on the actual data length. No padding of spaces is done.
 
-### 4. Explain the differences between SQL and MySQL?
+### 4. Explain the differences between SQL and MySQL?✅
 
 | SQL                                                                                                   | MySQL                                                                                             |
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -41,11 +41,11 @@ CREATE DATABASE mydatabase;
 | SQL can be implemented in various RDBMS such as PostgreSQL, SQLite, Microsoft SQL Server, and others. | MySQL is a specific implementation of an RDBMS that uses SQL for querying and managing databases. |
 | SQL itself is not a product and doesn’t have a license. It’s a standard language.                     | MySQL is open-source and available under the GNU General Public License (GPL).                    |
 
-### 5. What is the MySQL server’s default port?
+### 5. What is the MySQL server’s default port?✅
 
 ****3306**** is [MySQL server](https://www.geeksforgeeks.org/how-to-stop-mysql-server-on-windows-and-linux)‘s default port.
 
-### 6. How can we learn batch mode in MySQL?
+### 6. How can we learn batch mode in MySQL?✅
 
 Below is the syntax used to run [batch](https://www.geeksforgeeks.org/batch-command-in-linux-with-examples) mode.
 
@@ -53,7 +53,7 @@ Below is the syntax used to run [batch](https://www.geeksforgeeks.org/batch-comm
 >
 > mysq \<batch-file> mysql.out
 
-### 7. How many different tables are present in MySQL?
+### 7. How many different tables are present in MySQL?✅
 
 There are**** 5 types of tables ****present in MySQL.
 
@@ -63,14 +63,14 @@ There are**** 5 types of tables ****present in MySQL.
 * INNO DB table
 * ISAM table
 
-### 8. What are**** the differences between CHAR and VARCHAR data types in MySQL?****
+### 8. What are**** the differences between CHAR and VARCHAR data types in MySQL?****✅
 
 * Storage and retrieval have been different for CHAR and VARCHAR.
 * Column length is fixed in CHAR but VARCHAR length is variable.
 * CHAR is faster than VARCHAR.
 * CHAR datatype can hold a maximum of 255 characters while VARCHAR can store up to 4000 characters.
 
-### 9. What is ****Difference between CHAR\_LENGTH and LENGTH?****
+### 9. What is ****Difference between CHAR\_LENGTH and LENGTH?****✅
 
 [LENGTH](https://www.geeksforgeeks.org/length-function-in-mysql) is byte count whereas [CHAR\_LENGTH](https://www.geeksforgeeks.org/char_length-function-in-mysql) is character count. The numbers are the same for Latin characters but different for Unicode and other encodings.
 
@@ -82,15 +82,16 @@ There are**** 5 types of tables ****present in MySQL.
 
 > SELECT LENGTH(column\_name) FROM table\_name;
 
-### 10. What do you understand by % and \_ in the like statement?
+### 10. What do you understand by % and \_ in the like statement?✅
 
-****‘\_’ ****corresponds to only one character but ‘%’ corresponds to zero or more characters in the [LIKE](https://www.geeksforgeeks.org/sql-like) statement.
+\%:It is a wildcard that matches zero, one, or multiple characters.
+\_:It is a wildcard that matches exactly one character.
 
-### 11. How many index columns can be created in a table?
+### 11. How many index columns can be created in a table?✅
 
 There are ****16**** indexed columns can be created in a table.
 
-### 12. What are string types available for columns?
+### 12. What are string types available for columns?✅
 
 There are six string types available for the column.
 
@@ -101,13 +102,13 @@ There are six string types available for the column.
 * CHAR
 * VARCHAR
 
-### 13. Explain the main difference between FLOAT and DOUBLE?
-
+### 13. Explain the main difference between FLOAT and DOUBLE?✅
 * [FLOAT](https://www.geeksforgeeks.org/css-float) stored floating point number with 8 place accuracy. The size of FLOAT is 4 bytes.
 * [DOUBLE](https://www.geeksforgeeks.org/difference-float-double-c-cpp) also stored floating point numbers with 18 place accuracy. The size of DOUBLE is 8 bytes.
 
-### 14. Explain the differences between BLOB and TEXT.
-
+### 14. Explain the differences between BLOB and TEXT.✅
+Blob:大小写敏感 byte stream binary form
+Text:大小写不敏感
 ****BLOB:****
 
 A [BLOB](https://www.geeksforgeeks.org/retrieve-image-and-file-stored-as-a-blob-from-mysql-table-using-python) is a large object in binary form that can hold a variable amount of data. Sorting and comparing in BLOB values are case-sensitive.
@@ -130,18 +131,18 @@ There are four types of TEXT.
 * MEDIUMTEXT
 * LONGTEXT
 
-### 15. Explain the ****difference between having and where clause in MySQL.****
+### 15. Explain the ****difference between having and where clause in MySQL.****✅
 
-* [WHERE](https://www.geeksforgeeks.org/sql-where-clause) statement is used to filter rows but [HAVING](https://www.geeksforgeeks.org/sql-having-clause-with-examples) statement is used to filter groups.
+* [WHERE](https://www.geeksforgeeks.org/sql-where-clause) statement is used to filter **rows** but [HAVING](https://www.geeksforgeeks.org/sql-having-clause-with-examples) statement is used to filter **groups**.
 * [GROUP BY](https://www.geeksforgeeks.org/sql-group-by) is not used with WHERE. HAVING clause is used with GROUP BY.
 
-### 16. Explain REGEXP?
+### 16. Explain REGEXP?✅
 
 [REGEXP](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp) is a pattern match where the pattern is matched anywhere in the search value.
 
 For more detail you refer to our [MySQL | Regular expressions](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp) Article.
 
-### 17. How can we add a column in MySQL?
+### 17. How can we add a column in MySQL?✅
 
 A ****column**** is a series of table cells that store a value for table’s each row. we can add column by using [ALTER TABLE ](https://www.geeksforgeeks.org/sql-alter-add-drop-modify)statement.
 
@@ -149,7 +150,7 @@ A ****column**** is a series of table cells that store a value for table’s eac
 >
 > ADD COLUMN col\_name col\_definition \[FIRST|AFTER exist\_col];
 
-### 18. How to delete columns in MySQL?
+### 18. How to delete columns in MySQL?✅
 
 We can remove columns in MySQL by using [ALTER TABLE](https://www.geeksforgeeks.org/sql-alter-rename) statement.
 
@@ -157,23 +158,23 @@ We can remove columns in MySQL by using [ALTER TABLE](https://www.geeksforgeeks.
 
 > ****ALTER**** ****TABLE**** table\_name ****DROP**** ****COLUMN**** column1, column2….;   
 
-### 19. How to delete a table in MySQL?
+### 19. How to delete a table in MySQL?✅
 
 We can delete a table by using [DROP TABLE](https://www.geeksforgeeks.org/hive-drop-table) statement. This statement deletes complete data of table.
 
 > DROP TABLE table-name;
 
-### 20. How are mysql\_fetch\_array() and mysql\_fetch\_object() different from each another?
+### 20. How are mysql\_fetch\_array() and mysql\_fetch\_object() different from each another?✅
 
 mysql\_fetch\_array() Gets a result row as a related array or a regular [array](https://www.geeksforgeeks.org/array-data-structure) from database. mysql\_fetch\_object gets a result row as an [object](https://www.geeksforgeeks.org/object-class-in-java) from the database.
 
-### 21. How to get the top 10 rows?
+### 21. How to get the top 10 rows?✅
 
 The following query will be used to get top 10 rows.
 
 > SELECT \* FROM table\_name LIMIT 0,10;
 
-### 22. How does NOW() differ from CURRENT\_DATE()?
+### 22. How does NOW() differ from CURRENT\_DATE()?✅
 
 current year, month, and date with hours, minutes, and seconds is shown by using [NOW()](https://www.geeksforgeeks.org/now-function-in-mysql) command while [CURRENT\_DATE](https://www.geeksforgeeks.org/current_date-function-in-mysql) shows current year current month, and current date.
 
@@ -183,9 +184,9 @@ current year, month, and date with hours, minutes, and seconds is shown by using
 >
 > SELECT CURRENT\_DATE();
 
-### 23. ****What is the use of the ‘DISTINCT’ keyword in MySQL?****
+### 23. ****What is the use of the ‘DISTINCT’ keyword in MySQL?****✅
 
-the [DISTINCT](https://www.geeksforgeeks.org/postgresql-distinct-on-expression) keyword allows for the removal of all duplicate records and the retrieval of unique records.**** The ****DISTINCT keyword is used with the SELECT statement.
+the **DISTINCT** keyword allows for the removal of all **duplicate** records and the retrieval of **unique** records.**** The ****DISTINCT keyword is used with the SELECT statement.
 
 ****Syntax:****
 
@@ -193,13 +194,13 @@ the [DISTINCT](https://www.geeksforgeeks.org/postgresql-distinct-on-expression) 
 >
 > FROM table\_name;
 
-### 24. Which storage engines are used in MySQL?
+### 24. Which storage engines are used in MySQL?✅
 InnoDB
 MyISAM
 Memory
 CSV
 
-### 25. How to create a table in MySQL?
+### 25. How to create a table in MySQL?✅
 
 The [CREAT TABLE](https://www.geeksforgeeks.org/postgresql-create-table) command will be used to create a table in MySQL.
 
@@ -207,7 +208,7 @@ The [CREAT TABLE](https://www.geeksforgeeks.org/postgresql-create-table) command
 
 > CREATE TABLE ‘Employee’ (‘Employee\_Name’ VARCHAR(128), ‘Employee\_ID’ VARCHAR(128), ‘Employee\_Salary’ VARCHAR(16), ‘Designation’ CHAR(4)) ;
 
-### 26. How to insert data in MySQL table?
+### 26. How to insert data in MySQL table?✅
 
 We can add data to a table using the [INSERT INTO](https://www.geeksforgeeks.org/sql-insert-statement) statement .
 
@@ -219,7 +220,7 @@ We can add data to a table using the [INSERT INTO](https://www.geeksforgeeks.org
 
 ## Intermediate MySQL Interview Questions and Answers
 
-### 27. ****Write a statement to find duplicate rows In the MySQL table?****
+### 27. ****Write a statement to find duplicate rows In the MySQL table?****✅
 
 The below statement is used to find duplicate rows.
 
@@ -477,6 +478,7 @@ key(实际使用的索引) = NULL → 说明没有使用索引，需要 增加�
 
 ### 56. Covering Index? & Composite Index?
 > A Covering Index is an index that contains all the columns needed for a query, so the database engine can retrieve the required results directly from the index without accessing the actual table data. This improves query performance by reducing I/O operations.
+> 趁机拓展innoDB底层结构
 > 由多个列组成的索引，提高组合查询效率,适用于 WHERE 子句有多个字段的组合查询
 
 ### 57. Mysql 备份方案?
@@ -517,3 +519,4 @@ InnoDB支持row-level lock
 InnoDB支持崩溃后恢复, 基于redo log
 InnoDB支持MVCC
 
+### 64. partition by?
