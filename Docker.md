@@ -227,6 +227,7 @@ docker system prune
 
 [Docker Swarm](https://www.geeksforgeeks.org/introduction-to-docker-swarm-mode) is an inherented native clustering that comes up with a orchestration solution for the Docker software. It helps in simplifying the management of a swarm of Docker nodes on allowing the seamless scaling of the applications across various multiple nodes within the network. It provides built-in load balancing and will ensure the high availability of containerized applications.
 
+
 ### 26. How Do You Scale Docker Containers Horizontally?
 
 Horizontal scaling is achieved through replicating the services across multiple nodes. Tools like [Docker Compose](https://www.geeksforgeeks.org/docker-compose) or Docker Swarm facilitate this process. For example, using ****\`docker-compose up --scale web=3\`**** command will replicates the ****"web"**** service to three instances, distributing the workload across them horizontally.
@@ -345,7 +346,7 @@ docker secret create db_password mysecretpassword
 
 ### 40. How Do You Create a Multi-stage Build in Docker?
 
-A multi-stage build in Docker involves with using multiple "FROM" instructions in a Dockerfile. Each "FROM" instruction will begin a new stage, allowing you to build and copy the artifacts from previous stages for reducing the final image size.\
+A multi-stage build in Docker involves with using multiple "FROM" instructions in a Dockerfile. Each "FROM" instruction will begin a new stage, allowing you to **build and copy the artifacts from previous stages** for reducing the final image size.\
 Example of Dockerfile with multi-stage build:
 
 ```
@@ -368,7 +369,7 @@ Docker provides several ways to manage network connectivity between containers a
 * ****Bridge Networks:**** Bridge networks are the default networks , these are created when a Docker daemon starts. Through this network containers on the same bridge network can communicate with each other.
 * ****Host Networks:**** In this containers will share the host's network namespace. so that containers can directly use the host machine's network interfaces.
 * ****Custom Networks:**** Custom bridge networks can used to create isolate containers and control their communication. Containers on custom networks can communicate with each other with the help of container names as hostnames.
-* ****Overlay Networks (Swarm Mode): ****Overlay networks are used in Docker Swarm mode for communication between the services that running on different nodes. They provide multi-host networking for orchestration of containers.
+* ****Overlay Networks****  (Swarm Mode)Overlay networks are used in Docker Swarm mode for communication between the services that running on different nodes. They provide multi-host networking for orchestration of containers.
 * ****Macvlan Networks:**** Macvlan networks will allow containers to have their own MAC addresses on the physical network, providing them with the direct access to the host's network.
 
 Examples for creating the networks are listed here:
@@ -415,7 +416,7 @@ docker inspect <container_id>
 docker exec -it <container_id> ps aux
 ```
 
-* ****Network Troubleshooting: ****Check network connectivity of the container through the hostname
+* ****Network Troubleshooting:****Check network connectivity of the container through the hostname
 
 ```
 docker exec -it <container_id> ping <hostname>
@@ -429,7 +430,7 @@ docker stats <container_id>
 
 ### 44. How Does Docker Handle Service Discovery in Swarm Mode?
 
-In Docker Swarm Mode, service discovery is automatically handled through maintaining an internal [DNS service](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer) that automatically assigns DNS names to the containers on enabling easy service discovery within the swarm.
+In Docker Swarm Mode, service discovery is automatically handled through maintaining an internal [DNS service](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer) that automatically assigns **DNS names** to the containers on enabling easy service discovery within the swarm.
 
 ## Scenario-Based Docker Interview Questions and Answers
 
